@@ -1,0 +1,7 @@
+---
+- name: Start Kafka
+  shell: "{{ kafka_installation_path }}/bin/kafka-server-start -daemon {{ kafka_config_file_path }}"
+  become_user: "{{ kafka_user }}"
+  environment:
+    KAFKA_HEAP_OPTS: "-Xmx512M -Xms512M"
+  when: kafka_installed | default(false) | bool

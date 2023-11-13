@@ -1,0 +1,7 @@
+---
+- name: Start ZooKeeper
+  shell: "{{ zookeeper_installation_path }}/bin/zookeeper-server-start -daemon {{ zookeeper_config_file_path }}"
+  become_user: "{{ zookeeper_user }}"
+  environment:
+   KAFKA_HEAP_OPTS: "-Xmx512M -Xms512M"
+  when: zookeeper_installed | default(false) | bool

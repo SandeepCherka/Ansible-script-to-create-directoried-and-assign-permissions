@@ -1,0 +1,5 @@
+kafka_installed: true
+kafka_user: sandy
+kafka_installation_path: /home/sandy/confluent-7.5.2/bin
+kafka_config_file_path: /home/sandy/confluent-7.5.2/etc/kafka/server.properties
+

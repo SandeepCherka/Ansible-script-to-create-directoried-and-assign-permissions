@@ -1,0 +1,4 @@
+zookeeper_installed: true
+zookeeper_user: ansible
+zookeeper_installation_path: /home/sandy/confluent-7.5.2
+zookeeper_config_file_path: /home/sandy/confluent-7.5.2/etc/kafka/zookeeper.properties

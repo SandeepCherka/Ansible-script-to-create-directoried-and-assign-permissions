@@ -1,0 +1,8 @@
+---
+- name: Start ZooKeeper and Kafka
+  hosts: all
+  gather_facts: false
+  roles:
+    - zookeeper
+    - kafka
+
