@@ -1,0 +1,8 @@
+---
+- name: Create Directories and Set Permissions
+  hosts: zoo[0]
+  gather_facts: false
+  roles:
+    - zookeeper
+    - kafka
+

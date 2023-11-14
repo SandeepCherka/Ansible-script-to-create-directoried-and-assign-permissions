@@ -1,0 +1,17 @@
+---
+  - name: Create /file2/kaf directory
+    ansible.builtin.file:
+    path: /home/ansible/file2/kaf
+    state: directory
+    owner: ansible
+    group: ansible
+    mode: '0755'
+
+  - name: Give user permissions for /file2/kaf
+    ansible.builtin.acl:
+    path: /home/ansible/file2/kaf
+    entity: ansible
+    etype: group
+    permissions: rwx
+    state: present
+

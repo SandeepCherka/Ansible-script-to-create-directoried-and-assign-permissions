@@ -1,0 +1,17 @@
+zoo:
+  hosts:
+    zookeeper1:
+      ansible_host: 172.31.46.185
+    zookeeper2:
+      ansible_host: 172.31.34.95
+    zookeeper3:
+      ansible_host: 172.31.40.135
+
+kaf:
+  hosts:
+    kafka1:
+      ansible_host: 172.31.18.5
+    kafka2:
+      ansible_host: 172.31.23.9
+    kafka3:
+      ansible_host: 172.31.18.248
